@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/output.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/landing.css') }}">
+    <title> {{page}} </title>
+</head>
+{% block main %}
+{% endblock %}
+
+<footer class="mt-10">
+    <div class="p-6 border-solid border-t-2">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+                <div class="mb-5 flex flex-col">
+                    <img src="../static/img/bimctlogo.png" style="max-width: 340px;" alt="">
+                    <p class="text-gray-500">
+                        All Rights Reserved
+                    </p>
+                </div>
+
+                <div class="flex flex-row justify-center items-center">
+                    <div class="mb-5 lg:ml-64 w-full flex flex-col justify-center items-center">
+                        <h4 class="pb-4 mt-4 font-bold">About Us</h4>
+                        <ul class="text-gray-500">
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/"
+                                    class="hover:text-yellow-500">Home</a></li>
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/mission"
+                                    class="hover:text-yellow-500">Mission</a></li>
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/people"
+                                    class="hover:text-yellow-500">People</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-5 flex flex-col mt-8 justify-center items-center" style="width: 340px;">
+                        <h4 class="pb-4 mt-4 font-bold">Our Competition</h4>
+                        <ul class="text-gray-500">
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/format"
+                                    class="hover:text-yellow-500">Format</a></li>
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/current"
+                                    class="hover:text-yellow-500">BIMCT Fall 2022</a></li>
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/archive"
+                                    class="hover:text-yellow-500">Archive</a></li>
+                            <li class="pb-4"> <i class="fa fa-chevron-right text-yellow-500"></i> <a href="/signup"
+                                    class="hover:text-yellow-500">Sign Up</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</footer>
+
+<script type="text/javascript">
+
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active")
+        navigation.classList.toggle("active")
+    });
+</script>
