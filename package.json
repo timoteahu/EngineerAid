@@ -1,0 +1,20 @@
+{
+  "name": "engineeraid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "npx tailwindcss-cli@latest build -i ./static/css/input.css -o ./static/css/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timoteahu/EngineerAid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timoteahu/EngineerAid/issues"
+  },
+  "homepage": "https://github.com/timoteahu/EngineerAid#readme"
+}
