@@ -1,0 +1,292 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,700;1,800&family=Lato:wght@100;300;400;700;900&family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    transition: 0.4s ease;
+}
+
+header .brand {
+    color: #000;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+header .navigation {
+    top: -24px;
+    left: 90px;
+    width: 900px;
+    position: relative;
+    margin-top: 20px;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    transition: all .5s;
+}
+
+header .navigation .navigation-items a:hover {
+    color: #555;
+}
+
+header .navigation .navigation-items a:after {
+    transition: all .5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+header .navigation .navigation-items a:hover:after {
+    width: 100%;
+}
+
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: purple;
+    letter-spacing: 2px;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #3343bd, #0cb8f6);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+header img {
+    max-width: 150px;
+}
+
+.front-image {
+    max-width: 30em;
+}
+
+@media (max-width: 1260px) {
+    .front-image {
+        display:none;
+    }
+}
+
+.watch {
+    background-color:#3343bd;
+    color: white;
+    border-radius: 10em;
+    padding: 1em;
+    transition: all 0.3s ease;
+}
+
+.watch:hover {
+    background-color: #9B5DE5;
+    transition: all 0.3s ease;
+}
+
+.spotify {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease;
+    max-width: 40px;
+}
+
+.spotify:hover {
+    transform: translate(0px, -5px);
+}
+
+
+.comminhealth {
+    position: relative;
+    width: 100%;
+    transition: all 03.s ease;
+    max-width: 50px;
+}
+
+.comminhealth:hover {
+    transform: translate(0px, -5px);
+}
+
+.tag {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: 2px solid;
+    border-color: blue;
+    color: #6b7280;
+    padding: 4px 8px 4px 8px;
+    margin-right: 15px;
+    border-radius: 5em;
+    transition: 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #f9fafb;
+    border-color: black;
+    color: black;
+    transition: 0.3s ease;
+    
+}
+
+.sidetag {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: 2px solid;
+    border-color: #6b7280;
+    color: #6b7280;
+    padding: 4px 8px 4px 8px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border-radius: 5em;
+    transition: 0.3s ease;
+}
+
+.sidetag:hover {
+    background-color: #f9fafb;
+    border-color: black;
+    color: black;
+    transition: 0.3s ease;
+    
+}
+
+.b {
+    display: none;
+}
+
+.subscribe {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.subscribe-button {
+    display:block;
+    transition: 0.3s ease;
+}
+
+.more:hover {
+    color: violet;
+    transition: 0.3s ease;
+}
+.subscribe-button:hover {
+    background-color: gray;
+    color: white;
+    transition: 0.3s ease;
+}
+@media (max-width: 768px) {
+    .a {
+        display:none;
+    }
+    .b {
+        display: block;
+    }
+}
+@media (max-width: 1260px) {
+    header {
+        padding: 12px 20px;
+        justify-content: space-between;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+    header .navigation {
+        display: none;
+        transition: 0.3s ease;
+    }
+
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+        transition: 0.3s ease;
+    }
+
+    header .navigation .navigation-items a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header .navigation .navigation-items a:before {
+        background: #222;
+        height: 5px;
+    }
+
+    header .navigation .navigation-items {
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn {
+        background: url(../img/icons/bars-solid.svg) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+
+    .menu-btn.active {
+        z-index: 999;
+        background: url(../img/icons/xmark-solid.svg) no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
