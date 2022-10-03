@@ -34,6 +34,18 @@ header .brand {
     margin-top: 20px;
 }
 
+footer .brand {
+    color: #000;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+
 header .navigation {
     top: -24px;
     left: 90px;
