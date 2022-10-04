@@ -201,6 +201,19 @@ header img {
     
 }
 
+.home-button {
+    margin: 4px;
+    padding: 7px 10px 7px 10px;
+    background-color: #576CA8;
+    color: white;
+    border-radius: 2em;
+}
+
+.home-button:hover {
+    background-color: #7D70BA;
+    transition: 0.2s ease-in;
+}
+
 .b {
     display: none;
 }
