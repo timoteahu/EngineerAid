@@ -9,7 +9,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
+
 
 header {
     z-index: 999;
@@ -48,7 +50,7 @@ footer .brand {
 
 header .navigation {
     top: -24px;
-    left: 90px;
+    left: 130px;
     width: 900px;
     position: relative;
     margin-top: 20px;
@@ -206,12 +208,15 @@ header img {
     padding: 7px 10px 7px 10px;
     background-color: #576CA8;
     color: white;
+    border: 2px solid #576CA8;
     border-radius: 2em;
 }
 
 .home-button:hover {
-    background-color: #7D70BA;
+    background-color: white;
     transition: 0.2s ease-in;
+    color: #576CA8;
+    border: 2px solid #576CA8;
 }
 
 .b {
@@ -314,4 +319,9 @@ header img {
         background-position: center;
         transition: 0.3s ease;
     }
+}
+
+.card:hover {
+    opacity: 50%;
+    transition: 0.2s ease-in-out;
 }

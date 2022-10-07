@@ -1,16 +1,18 @@
 {% extends "layout.html" %}
 {% block main %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+<link rel="stylesheet" href="../static/css/podcast.css" />
 
 <body class="mt-40">
     {% include "navbar.html" %}
 
     <div class="flex flex-col justify-center items-center">
 
-        <div class="flex flex-col-reverse lg:flex-row justify-between items-center w-full mt-10 mb-10"
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center w-full mt-10 mb-10 lg:pl-24"
             style="max-width: 84em;">
             <div class="flex flex-col justify-start items-center mb-10" style="max-width: 40em;">
-                <p class="font-bold text-4xl text-center mb-4">Watch Us Teach the World of Engineering to the World.</p>
+                <p class="font-bold text-4xl text-center mb-2 pb-2">Watch Us Teach the World of Engineering to the
+                    World.</p>
                 <p class="mb-6 text-xl text-center">Help us with our mission to teach engineering to the world.</p>
 
                 <div class="flex flex=row justify-center items-center">
@@ -26,13 +28,114 @@
 
         </div>
 
-        <div class="flex flex-col justify-center items-center w-full" style="background-color: #EDF3F0;">
-            <p class="mt-10 mb-4 text-3xl font-bold text-center">We show you the important steps.</p>
-            <p class="text-lg text-center mb-10" style="max-width: 35em;">Look at our quality tutorials on various engineering principles and mechanisms. Anything from simple tools to complex code, we have it all.</p>
-            <div class="flex flex-row justify-center items-center w-1/2">
-                <iframe class="mb-10" width="520" height="300" src="https://www.youtube.com/embed/tvGTI3UfYHU">
-                </iframe>
+        <div class="flex flex-col justify-center items-center w-full mb-10 pb-10" style="background-color: #EDF3F0;">
+            <p class="text-4xl font-bold mt-10">Our Impact.</p>
+            <div class="wrapper my-10">
+                <div class="flex flex-col justify-center items-center container">
+                    <i class="fas fa-smile-beam test"></i>
+                    <span class="num" data-val="100">000</span>
+                    <span class="text">Students Helped</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-clock test"></i>
+                    <span class="num" data-val="681">000</span>
+                    <span class="text">Hours Taught</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-list test"></i>
+                    <div class="flex flex-row justify-center items-center">
+                        <span class="num" data-val="109">000</span>
+                        <span class="text-white text-3xl font-bold ml-4">K</span>
+                    </div>
+                    <span class="text">Total Editorials</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-user test"></i>
+                    <span class="num" data-val="124">000</span>
+                    <span class="text">Team Size</span>
+                </div>
             </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center w-full mb-10">
+            <p class="mt-10 mb-4 text-3xl font-bold text-center">We Show You the Important Steps.</p>
+            <p class="text-lg text-center mb-14" style="max-width: 35em;">Look at our quality tutorials on various
+                engineering principles and mechanisms. Anything from simple tools to complex code, we have it all.</p>
+            <div class="flex flex-col lg:flex-row justify-center items-center w-5/6">
+                <iframe class="mb-10 w-2/3 lg:w-1/2 lg:mr-10" style="max-width: 30em;" height="300"
+                    src="https://www.youtube.com/embed/tvGTI3UfYHU">
+                </iframe>
+
+                <div class="flex flex-col justify-start items-center" style="height: 20em;">
+                    <p class="text-3xl mb-10 font-bold underline">Look at our editorials. </p>
+                    <p class="text-center mb-8" style="max-width: 27em;">We produce the editorials to help you learn all
+                        you need to know about engineering. From gear ratios to complex mechanisms, we explain the
+                        principles you need to pursue your engineering goals.
+                    </p>
+
+                    <button class="home-button">More Videos</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col justify-center items-center w-full" style="background-color: #EDF3F0;">
+            <p class="text-3xl font-bold my-10">Join our Programs</p>
+
+            <section class="relative mb-10">
+                <div class="flex flex-col md:flex-row justify-center items-center">
+
+                    <a href="https://www.google.com" class="sm:mr-10">
+                        <div class="max-w-xs rounded overflow-hidden shadow-lg mb-10 card"
+                            style="background-color: white; height: 28em;"">
+                            <img class=" w-full" src="../static/img/mentor.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl text-center mb-2">Become a Mentor</div>
+                                <p class="text-gray-700 text-base text-center">
+                                    We are striving to ease the pathway to understanding engineering and robotics. Helps
+                                    us
+                                    with our mission to make the world a better and more educated place through the
+                                    power of
+                                    engineering and robots.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.google.com" class="sm:mr-10">
+                        <div class="max-w-xs rounded overflow-hidden shadow-lg mb-10 card h-full"
+                            style="background-color: white; height: 28em;"">
+                            <img class=" w-full" src="../static/img/learn.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl text-center mb-2">Sign Up to Learn</div>
+                                <p class="text-gray-700 text-base text-center">
+                                    Join our programs to learn through the mentorship of our teachers. We want to
+                                    provide you the best possible chance to succeed, and through our mentors, we will
+                                    aid
+                                    you in your attempt to learn about engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.google.com" class="sm:mr-10">
+                        <div class="max-w-xs rounded overflow-hidden shadow-lg mb-10 card h-full"
+                            style="background-color: white; height: 28em;">
+                            <img class="w-full" src="../static/img/read.jpg" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl text-center mb-2">Read our Editorials</div>
+                                <p class="text-gray-700 text-base text-center">
+                                    Read our editorials on the various engineering and robotics topics to learn more
+                                    about the essential principles of robotics. Our editorials provide free and engaging
+                                    lessons for everyone to learn the essential parts.
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
         </div>
 
     </div>
@@ -47,6 +150,7 @@
             navigation.classList.toggle("active")
         });
     </script>
+    <script src="../static/js/podcast.js"></script>
 </body>
 
 {% endblock %}
