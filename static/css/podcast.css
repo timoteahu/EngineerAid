@@ -1,12 +1,12 @@
 .wrapper {
     position: relative;
-    width: 65vw;
+    width: 56vw;
     display: flex;
     justify-content: space-around;
     gap: 5px;
   }
   .container {
-    width: 28vmin;
+    width: 24vmin;
     height: 28vmin;
     display: flex;
     flex-direction: column;
