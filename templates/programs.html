@@ -3,11 +3,16 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
 <link rel="stylesheet" href="../static/css/podcast.css" />
 
-<body class="mt-40">
+<body class="mt-40 ">
     {% include "navbar.html" %}
 
-    <div class="flex flex-col justify-center items-center">
-        <p>HELLO!</p>
+    <div class="flex flex-col justify-center items-center ">
+        <div class="flex flex-row justify-start items-center w-3/4">
+            <p class="text-4xl w-1/2 font-bold text-center mr-12">Join Our Programs to Learn.</p>
+            <img src="../static/img/teaching.JPG" class="w-1/6" style="border: 2px solid black;" alt="">
+            <img src="../static/img/teaching2.JPG" class="w-1/6" style="border: 2px solid black;" alt="">
+        </div>
+
     </div>
 
     <script type="text/javascript">
