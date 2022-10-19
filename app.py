@@ -27,23 +27,23 @@ def sendEmail(result):
 
 @app.route('/')
 def index():
-    return render_template("/index.html", current="home")
+    return render_template("/index.html", current="home", page="Home")
 
 @app.route("/programs")
 def programs():
-    return render_template("/programs.html", current="programs")
+    return render_template("/programs.html", current="programs", page="Programs")
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html", page="Contact")
 
 @app.route("/branches")
 def branches():
-    return render_template("branches.html", current="branches")
+    return render_template("branches.html", current="branches", page="Branches")
 
 @app.route("/resources")
 def resources():
-    return render_template("resources.html", current="resources")
+    return render_template("resources.html", current="resources", page="Resources")
 
 @app.route("/sendMail", methods=['GET', 'POST'])
 def sendMail():
