@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,700;1,800&family=Lato:wght@100;300;400;700;900&family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -66,15 +67,15 @@ header .navigation .navigation-items a {
     transition: 0.3s ease;
 }
 
-header .navigation .navigation-items a:before {
+header .navigation .navigation-items a:before  {
     transition: all .5s;
 }
 
 header .navigation .navigation-items a:hover {
-    color: #555;
+    color: #576CA8;
 }
 
-header .navigation .navigation-items a:after {
+header .navigation .navigation-items a:after{
     transition: all .5s;
     position: absolute;
     bottom: 0;
@@ -88,9 +89,6 @@ header .navigation .navigation-items a:after {
     height: 1px;
 }
 
-header .navigation .navigation-items a:hover:after {
-    width: 100%;
-}
 
 
 .gradient-text {

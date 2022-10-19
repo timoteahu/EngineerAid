@@ -12,11 +12,32 @@
 
         <div class="navigation mt-10" style="overflow-y: hidden;">
             <div class="navigation-items mt-10" style="overflow-y: hidden;">
+                {% if current == "home" %}
+                <a href="/" style="color: #576CA8;">Home</a>
+                {% else %} 
                 <a href="/">Home</a>
+                {%endif%}
+
+
+                {% if current == "programs" %}
+                <a href="/programs" style="color: #576CA8;">Programs</a>
+                {% else %} 
                 <a href="/programs">Programs</a>
-                <a href="/about">Branches</a>
-                <a href="/" class="mr-10">Resources</a>
-                <a><button class="ml-10 home-button">Contact Us</button></a>
+                {%endif%}
+
+                {% if current == "branches" %}
+                <a href="/branches" style="color: #576CA8;">Branches</a>
+                {% else %} 
+                <a href="/branches">Branches</a>
+                {%endif%}
+
+                {% if current == "resources" %}
+                <a href="/resources" class="mr-10" style="color: #576CA8;">Resources</a>
+                {% else %} 
+                <a href="/resources" class="mr-10">Resources</a>
+                {%endif%}
+
+                <a href="/contact"><button class="ml-10 home-button">Contact Us</button></a>
             </div>
         </div>
     </div>

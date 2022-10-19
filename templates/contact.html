@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block main %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+<link rel="stylesheet" href="../static/css/podcast.css" />
+
+<body class="mt-40 ">
+    {% include "navbar.html" %}
+
+    <div class="flex flex-row justify-center items-center">
+        <div class="flex flex-col w-1/2 justify-center  items-center px-10 py-10 shadow-md rounded" style="background-color: white; min-width: 500px;">
+      
+          <div class="flex flex-col justify-center items-center w-full max-w-lg">
+            <b><h1 class="text-bookmark-blue text-2xl md:text-3 lg:text-4xl text-center mb-4 font-body">Get in Contact with Us!</h1></b>
+            <p class="text-bookmark-grey text-lg text-center justify-center items-center font-body w-3/4 mb-10">If you have any questions regarding our mission or what we do, feel free to get in contact with us!</p>
+            <p class="text-bookmark-grey text-lg text-center justify-center items-center font-body w-3/4 mb-10">If you want to join our team, you can either fill out this form with a message, or utilize one of the many sign up buttons on our programs page and sign up through those as well!</p>
+      
+          </div>
+          <div class="w-full max-w-lg">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/sendMail" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2"> Name</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="name" placeholder="Enter Name" id="name" required>
+              </div>
+      
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2"> Email</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" placeholder="Enter Email" id="email" required>
+              </div>
+      
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="" name="message" placeholder="Enter a Message" id="message" required></textarea>
+              </div>
+      
+              <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active")
+            navigation.classList.toggle("active")
+        });
+    </script>
+    <script src="../static/js/podcast.js"></script>
+</body>
+
+{% endblock %}

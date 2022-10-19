@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block main %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+<link rel="stylesheet" href="../static/css/podcast.css" />
+
+<body class="mt-40 ">
+    {% include "navbar.html" %}
+
+    <div class="flex flex-col justify-center items-center">
+            <p class="text-6xl font-bold underline mb-14" style="overflow-y: hidden;">Our Growing Team</p>
+
+            <div class="flex flex-col justify-center items-center mb-14">
+                <p class="text4xl font-bold underline">Admin Team</p>
+
+                <div class="flex flex-wrap justify-center items-center">
+                    <div class="flex flex-col max-w-sm rounded overflow-hidden shadow-lg mb-10 justify-start items-center mx-10" style="background-color: white;">
+                        <img class="w-full justify-center items-center text-center mt-4 rounded px-6 py-4" style="max-width: 15rem;" src="../static/img/people/temp.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-center">Timothy Hu</div>
+                            <p class="text-gray-700 text-center">
+                                Founding Member
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col max-w-sm rounded overflow-hidden shadow-lg mb-10 justify-start items-center mx-10" style="background-color: white;">
+                        <img class="w-full justify-center items-center text-center mt-4 rounded px-6 py-4" style="max-width: 15rem;" src="../static/img/people/temp.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-center">Jiarong Zhang</div>
+                            <p class="text-gray-700 text-center">
+                                Founding Member
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col max-w-sm rounded overflow-hidden shadow-lg mb-10 justify-start items-center mx-10" style="background-color: white;">
+                        <img class="w-full justify-center items-center text-center mt-4 rounded px-6 py-4" style="max-width: 15rem;" src="../static/img/people/temp.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-center">Alex Chen</div>
+                            <p class="text-gray-700 text-center">
+                                Founding Member
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col justify-center items-center">
+                <p class="text4xl font-bold underline">California Branch</p>
+
+                <div class="flex flex-wrap justify-center items-center">
+                    <div class="flex flex-col max-w-sm rounded overflow-hidden shadow-lg mb-10 justify-start items-center mx-10" style="background-color: white;">
+                        <img class="w-full justify-center items-center text-center mt-4 rounded px-6 py-4" style="max-width: 15rem;" src="../static/img/people/temp.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-center">Henry Zhao</div>
+                            <p class="text-gray-700 text-center">
+                                California Branch Head
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col max-w-sm rounded overflow-hidden shadow-lg mb-10 justify-start items-center mx-10" style="background-color: white;">
+                        <img class="w-full justify-center items-center text-center mt-4 rounded px-6 py-4" style="max-width: 15rem;" src="../static/img/people/temp.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-center">Rudro Lahiri</div>
+                            <p class="text-gray-700 text-center">
+                                California Branch Mentor
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+    <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active")
+            navigation.classList.toggle("active")
+        });
+    </script>
+    <script src="../static/js/podcast.js"></script>
+</body>
+
+{% endblock %}
