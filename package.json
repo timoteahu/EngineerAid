@@ -4,7 +4,8 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "npx tailwindcss-cli@latest build -i ./static/css/input.css -o ./static/css/output.css -w"
+    "test": "npx tailwindcss-cli@latest build -i ./static/css/input.css -o ./static/css/output.css -w",
+    "test2": "npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css -w"
   },
   "repository": {
     "type": "git",
